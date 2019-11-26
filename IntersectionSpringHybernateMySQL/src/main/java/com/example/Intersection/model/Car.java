@@ -1,7 +1,5 @@
 package com.example.Intersection.model;
 
-import java.io.Serializable;
-
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
@@ -18,7 +16,7 @@ import com.sun.istack.NotNull;
 @Table(name="cars")
 @EntityListeners(AuditingEntityListener.class)
 @JsonIgnoreProperties(allowGetters = true)
-public class Car implements Serializable{
+public class Car {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY) 
